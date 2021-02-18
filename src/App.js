@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import 'aframe'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <a-scene>
+        <a-sphere
+          position="2 1.5 -3"
+          rotation="0 0 0"
+          scale="1 1 1"
+          color="yellow"
+          radius="0.5"
+          wireframe="true"
+        > </a-sphere>
+      </a-scene>
     </div>
   );
 }
